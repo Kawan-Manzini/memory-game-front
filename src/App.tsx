@@ -37,7 +37,7 @@ export const App: React.FC = () => {
 
   // Renderização do componente
   return (
-    <div>
+    <div className='flex content-center '>
       <h1>Real-time Guessing Game</h1>
       <div>
         <input
