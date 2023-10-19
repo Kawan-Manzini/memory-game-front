@@ -37,16 +37,16 @@ export const App: React.FC = () => {
 
   // Renderização do componente
   return (
-    <div className='flex content-center '>
+    <div className='flex flex-col items-center content-center text-gray-50 space-y-4'>
       <h1>Real-time Guessing Game</h1>
-      <div>
+      <div className='flex flex-col space-y-4'>
         <input
           type="number"
-          placeholder="Enter your guess"
+          placeholder="Adicione um Numero"
           onChange={(e) => setGuess(parseInt(e.target.value))} // Atualiza o estado 'guess' com o valor digitado
         />
         {/* // Chama a função handleGuess quando o botão é clicado */}
-        <button onClick={handleGuess}>Guess</button> 
+        <button className='bg-slate-600 rounded-lg shadow-md font-semibold' onClick={handleGuess}>Guess</button> 
       </div>
       {/* // Exibe a mensagem se houver alguma */}
       {message && <p>{message}</p>} 
